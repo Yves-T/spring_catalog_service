@@ -1,0 +1,13 @@
+### Create new book
+POST http://localhost:9001/books
+Content-Type: application/json
+
+{
+  "author": "Lyra Silverstar",
+  "title": "Northern Lights",
+  "isbn": "1234567891",
+  "price": 9.90
+}
+
+### Get a book
+GET http://localhost:9001/books/1234567891
