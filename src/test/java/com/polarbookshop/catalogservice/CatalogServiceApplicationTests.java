@@ -20,7 +20,8 @@ class CatalogServiceApplicationTests {
 
     @Test
     void whenPostRequestThenBookCreated() {
-        var expectedBook = Book.of("1234567890", "Title", "Author", 9.9);
+        var expectedBook = Book.of("1234567890", "Title", "Author", 9.9
+                , "Polarsophia");
         webTestClient.post()
                 .uri("/books")
                 .bodyValue(expectedBook)
@@ -35,7 +36,8 @@ class CatalogServiceApplicationTests {
     @Test
     void whenGetRequestWithIdThenBookReturned() {
         var bookIsbn = "1231231230";
-        var bookToCreate = Book.of(bookIsbn, "Title", "Author", 9.90);
+        var bookToCreate = Book.of(bookIsbn, "Title", "Author", 9.90
+                , "Polarsophia");
         Book expectedBook = webTestClient
                 .post()
                 .uri("/books")
