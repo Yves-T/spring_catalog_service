@@ -14,9 +14,6 @@ management:
         include: refresh
 
 spring:
-  sql:
-    init:
-      mode: always
   datasource:
     hikari:
       connection-timeout: 2000

@@ -1,5 +1,3 @@
-DROP table if exists book;
-
 CREATE table book
 (
     id                 BIGSERIAL PRIMARY KEY NOT NULL,
